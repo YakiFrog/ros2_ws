@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="MainBT">
+    <Sequence>
+      <Display in_num="123456"/>
+      <KeepRunningUntilFailure>
+        <Sequence>
+          <GetText out_text="{text_data}"/>
+          <Counter in_text="{text_data}"
+                   out_num="{num_data}"/>
+          <Display in_num="{num_data}"/>
+        </Sequence>
+      </KeepRunningUntilFailure>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="Counter"
+            editable="true">
+      <input_port name="in_text"/>
+      <output_port name="out_num"/>
+    </Action>
+    <Action ID="Display"
+            editable="true">
+      <input_port name="in_num"/>
+    </Action>
+    <Action ID="GetText"
+            editable="true">
+      <output_port name="out_text"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>
