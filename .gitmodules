@@ -1,0 +1,6 @@
+[submodule "src/navigation2"]
+	path = src/navigation2
+	url = https://github.com/YakiFrog/navigation2.git
+[submodule "src/slam_toolbox"]
+	path = src/slam_toolbox
+	url = https://github.com/YakiFrog/slam_toolbox.git
