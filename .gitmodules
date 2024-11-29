@@ -4,3 +4,6 @@
 [submodule "src/slam_toolbox"]
 	path = src/slam_toolbox
 	url = https://github.com/YakiFrog/slam_toolbox.git
+[submodule "src/turtlebot3"]
+	path = src/turtlebot3
+	url = https://github.com/YakiFrog/turtlebot3.git
